@@ -1,16 +1,18 @@
-<div *ngIf="showlogin">
+<div *ngIf="showlogin" class="LoginForm">
+  <h1>User Login</h1>
     <form #LoginAccount="ngForm" (ngSubmit)="logIn(LoginAccount.value)">
 
-        <input type="text" placeholder="username" name="username" ngModel><br>
-        <input type="password" placeholder="password" name="password" ngModel><br>
-        <button type="submit">Submit</button>
-
-        <span (click)="loginclose()">creat Account </span>
+        <input type="text" placeholder="username" name="username" ngModel class="loginuser"><br>
+        <input type="password" placeholder="password" name="password" ngModel class="loginpass"><br>
+        <button type="submit" class="loginbtn">Submit</button>
+<br>
+        <span class="showsignup">Dont have An Accoun? <b (click)="loginclose()">Click for signup</b> </span>
     
     </form>
 </div>
 
 <div *ngIf="!showlogin">
+  <h1>User Signup</h1>
     <form #registrAccount="ngForm" (ngSubmit)="RegisterAccount(registrAccount.value)">
 
         <input type="text" placeholder="Full Name" name="fname" ngModel class="form-control" ><br>
