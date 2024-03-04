@@ -1,0 +1,32 @@
+{
+  "UserData": [
+    {
+      "fname": "Shivam Kumar",
+      "email": "shivamstm01@gmail.com",
+      "number": "6201763368",
+      "age": 18,
+      "username": "shivamstm01",
+      "password": "Sitamarhi@123",
+      "Address": "W.no-9,Kailashpuri,Sitamarhi",
+      "state": "Bihar",
+      "City": "Patna",
+      "PinCode": 843301,
+      "Collage": "IES College",
+      "id": 1
+    },
+    {
+      "fname": "Shivam",
+      "email": "shivam91@abc",
+      "number": "1212121212",
+      "age": 18,
+      "username": "Shivam91",
+      "password": "App@123",
+      "Address": "Sitamarhi",
+      "state": "Andhra Pradesh",
+      "City": "Lucknow",
+      "PinCode": 14401,
+      "Collage": "ies",
+      "id": 2
+    }
+  ]
+}

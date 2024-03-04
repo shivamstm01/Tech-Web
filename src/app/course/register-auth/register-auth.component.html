@@ -1,0 +1,52 @@
+<div *ngIf="showlogin">
+    <form #LoginAccount="ngForm" (ngSubmit)="logIn(LoginAccount.value)">
+
+        <input type="text" placeholder="username" name="username" ngModel><br>
+        <input type="password" placeholder="password" name="password" ngModel><br>
+        <button type="submit">Submit</button>
+
+        <span (click)="loginclose()">creat Account </span>
+    
+    </form>
+</div>
+
+<div *ngIf="!showlogin">
+    <form #registrAccount="ngForm" (ngSubmit)="RegisterAccount(registrAccount.value)">
+
+        <input type="text" placeholder="Full Name" name="fname" ngModel class="form-control" ><br>
+
+        <input type="email" placeholder="Email" name="email" ngModel><br>
+
+        <input type="text" placeholder="Number" name="number" ngModel><br>
+
+        <input type="range" placeholder="age" [(ngModel)]="selectedAge" name="age"  >{{selectedAge}}<br>
+
+        <input type="text" placeholder="username" name="username" ngModel><br>
+
+        <input type="password" placeholder="password" name="password" ngModel><br>
+
+        <input type="text" placeholder="Address" name="Address" ngModel><br>
+
+        <label for="state">Select State:</label>
+        <select id="state" class="form-control" [(ngModel)]="selectedState" name="state">
+          <option value="">Select a state</option>
+          <option *ngFor="let state of states" [value]="state">{{ state }}</option>
+        </select>
+
+        <label for="state">Select City:</label>
+        <select id="City" class="form-control" [(ngModel)]="selectedCity" name="City">
+          <option value="">Select a City</option>
+          <option *ngFor="let city of cities" [value]="city">{{ city }}</option>
+        </select><br>
+        <input type="number" placeholder="PinCode" name="PinCode" ngModel><br>
+
+        <input type=" text" placeholder="Enter College/School Name" name="Collage" ngModel>
+
+     
+
+        <button type="submit">Register</button>
+
+        <span (click)="Registerclose()">Already Have Account </span>
+    
+    </form>
+</div>
