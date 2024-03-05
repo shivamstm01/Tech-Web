@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { UserdataService } from 'src/app/Service/userdata.service';
 import { login, signUp } from 'src/app/data';
 @Component({
@@ -8,6 +9,7 @@ import { login, signUp } from 'src/app/data';
 })
 export class RegisterAuthComponent implements OnInit {
   showlogin:boolean=false;
+ 
   selectedAge: number = 18;
   states: string[] = [
     'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chhattisgarh', 'Goa', 'Gujarat',
@@ -26,15 +28,15 @@ export class RegisterAuthComponent implements OnInit {
   ];
 
   selectedCity: string = ''; // Variable to hold the selected city
+  
 
   constructor(private http:UserdataService) { }
 
   ngOnInit(): void {
   }
-  RegisterAccount(data:signUp){
-    console.warn(data);
-    this.http.userSignUp(data);
-    
+  RegisterAccount(data: signUp) {
+        console.warn(data);
+        this.http.userSignUp(data);
 }
 
 logIn(data:login){

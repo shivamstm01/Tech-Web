@@ -53,7 +53,7 @@
 
 .Signup{
     margin-top: 50px;
-    height: 800px;
+    height: 900px;
     width: 500px;
     background-color: #34495e;
     margin-left: 36%;
@@ -69,36 +69,45 @@
     }
 
     .Signupfname{
-        margin-top: 40px;
+        margin-top: 20px;
         margin-left: 60px;
-        width: 280px;
+        .fname{
+            width: 250px;
         height: 35px;
+        margin-left: 10px;
         border-radius: 5px;
+        }
     }
     .Signupemail{
-        margin-top: 40px;
+        margin-top: 20px;
         margin-left: 60px;
-        width: 280px;
-        height: 35px;
-        border-radius: 5px;
+        #email{
+            width: 250px;
+            height: 35px;
+            margin-left: 40px;
+            border-radius: 5px;
+        }
     }
     label{
         color: white;
     }
     .Signupnumber{
-        margin-top: 40px;
+        margin-top: 20px;
         margin-left: 60px;
-        width: 280px;
-        height: 35px;
-        border-radius: 5px;
+        #number{
+            width: 250px;
+            height: 35px;
+            margin-left: 20px;
+            border-radius: 5px;
+        }
     }
     .Signupage{
         border-radius: 5px;
         margin-left: 60px;
         
-        .selectedAge{
+        #selectedAge{
             margin-top: 40px;
-            margin-left: 10px;
+            margin-left: 60px;
             width: 220px;
             height: 8px;
             
@@ -111,25 +120,102 @@
     }
 
     .SignupUser{
-        margin-top: 40px;
+        margin-top: 20px;
         margin-left: 60px;
-        width: 280px;
-        height: 35px;
-        border-radius: 5px;
+        #username{
+            width: 250px;
+            height: 35px;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
     }
     .Signuppass{
-        margin-top: 40px;
+        margin-top: 20px;
         margin-left: 60px;
-        width: 280px;
-        height: 35px;
-        border-radius: 5px;
+        #password{
+            width: 250px;
+            height: 35px;
+            margin-left: 15px;
+            border-radius: 5px;
+        }
     }
     .SignupAdd{
-        margin-top: 40px;
+        margin-top: 20px;
         margin-left: 60px;
-        width: 280px;
-        height: 35px;
-        border-radius: 5px;
+        #address{
+            width: 250px;
+            height: 35px;
+            margin-left: 25px;
+            border-radius: 5px;
+        }
+    }
+    .SignupState{
+      
+        margin-top: 20px;
+        margin-left: 62px;
+        #state{
+            width: 250px;
+            height: 35px;
+            margin-left: 50px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    }
+    .Signupcity{
+        
+        margin-top: 20px;
+        margin-left: 62px;
+        #City{
+            width: 250px;
+            height: 35px;
+            margin-left: 14px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    }
+
+    .SignupPin{
+        margin-top: 20px;
+        margin-left: 60px;
+        #pin{
+            width: 250px;
+            height: 35px;
+            margin-left: 25px;
+            border-radius: 5px;
+        }
+    }
+
+    .SignupCollege{
+        margin-top: 20px;
+        margin-left: 60px;
+        #Collage{
+            width: 250px;
+            height: 35px;
+            margin-left: 25px;
+            border-radius: 5px;
+        }
+    }
+
+    .Sigbtn{
+        
+            height: 50px;
+            width: 80px;
+            background-color: red;
+            margin-top: 30px;
+            margin-left: 200px;
+            color: white;
+            border-radius: 20px;
+            font-weight: bold;
+        
+    }
+
+    .showLogin{
+        margin-top: 20px;
+        margin-left: 50px;
+        text-align: center;
+       b{
+        cursor: pointer;
+       }
     }
    
    
