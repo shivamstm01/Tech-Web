@@ -2,9 +2,9 @@
     margin-top: 50px;
     height: 400px;
     width: 400px;
-    background-color: black;
+    background-color: #34495e;
     margin-left: 36%;
-    border: 3px solid grey;
+    border: 3px solid black;
     border-radius: 21px;
     h1{
         color:white;
@@ -12,7 +12,7 @@
         margin-top: 30px;
     }
     span{
-        color: aqua;
+        color: white;
     }
     .loginuser{
         margin-top: 40px;
@@ -41,5 +41,96 @@
     .showsignup{
         margin-top: 30px;
         margin-left: 50px;
+       b{
+        cursor: pointer;
+       }
     }
+}
+
+
+
+
+
+.Signup{
+    margin-top: 50px;
+    height: 800px;
+    width: 500px;
+    background-color: #34495e;
+    margin-left: 36%;
+    border: 3px solid black;
+    border-radius: 21px;
+    h1{
+        color: white;
+        text-align: center;
+        margin-top: 30px;
+    }
+    span{
+        color: white;
+    }
+
+    .Signupfname{
+        margin-top: 40px;
+        margin-left: 60px;
+        width: 280px;
+        height: 35px;
+        border-radius: 5px;
+    }
+    .Signupemail{
+        margin-top: 40px;
+        margin-left: 60px;
+        width: 280px;
+        height: 35px;
+        border-radius: 5px;
+    }
+    label{
+        color: white;
+    }
+    .Signupnumber{
+        margin-top: 40px;
+        margin-left: 60px;
+        width: 280px;
+        height: 35px;
+        border-radius: 5px;
+    }
+    .Signupage{
+        border-radius: 5px;
+        margin-left: 60px;
+        
+        .selectedAge{
+            margin-top: 40px;
+            margin-left: 10px;
+            width: 220px;
+            height: 8px;
+            
+        }
+        span{
+            color: white;
+            font-size: 15px;
+        }
+        
+    }
+
+    .SignupUser{
+        margin-top: 40px;
+        margin-left: 60px;
+        width: 280px;
+        height: 35px;
+        border-radius: 5px;
+    }
+    .Signuppass{
+        margin-top: 40px;
+        margin-left: 60px;
+        width: 280px;
+        height: 35px;
+        border-radius: 5px;
+    }
+    .SignupAdd{
+        margin-top: 40px;
+        margin-left: 60px;
+        width: 280px;
+        height: 35px;
+        border-radius: 5px;
+    }
+   
+   
 }

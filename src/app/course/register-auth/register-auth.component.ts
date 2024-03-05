@@ -7,7 +7,7 @@ import { login, signUp } from 'src/app/data';
   styleUrls: ['./register-auth.component.css']
 })
 export class RegisterAuthComponent implements OnInit {
-  showlogin:boolean=true;
+  showlogin:boolean=false;
   selectedAge: number = 18;
   states: string[] = [
     'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chhattisgarh', 'Goa', 'Gujarat',
