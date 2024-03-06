@@ -77,6 +77,10 @@
         margin-left: 10px;
         border-radius: 5px;
         }
+        #fnameError{
+            color: white;
+            text-align: center;
+        }
     }
     .Signupemail{
         margin-top: 20px;
@@ -86,6 +90,10 @@
             height: 35px;
             margin-left: 40px;
             border-radius: 5px;
+        }
+        #emailError{
+            color: white;
+            text-align: center;
         }
     }
     label{
@@ -99,6 +107,10 @@
             height: 35px;
             margin-left: 20px;
             border-radius: 5px;
+        }
+        #numberError{
+            color: white;
+            text-align: center; 
         }
     }
     .Signupage{
@@ -176,7 +188,7 @@
 
     .SignupPin{
         margin-top: 20px;
-        margin-left: 60px;
+        margin-left: 65px;
         #pin{
             width: 250px;
             height: 35px;
@@ -187,7 +199,7 @@
 
     .SignupCollege{
         margin-top: 20px;
-        margin-left: 60px;
+        margin-left: 68px;
         #Collage{
             width: 250px;
             height: 35px;

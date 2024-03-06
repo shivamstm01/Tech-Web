@@ -11,10 +11,13 @@ import {login, signUp} from '../data'
 export class UserdataService {
 
   invalidUserAuth=new EventEmitter<boolean>(false)
+ 
 
   constructor(private http:HttpClient,private router:Router) { }
 
   userSignUp(data:signUp){
+
+    
     this.http.post('http://localhost:3000/UserData',
     data,
     {observe:'response'}).subscribe((result)=>{
@@ -25,6 +28,7 @@ export class UserdataService {
       }
     })
   } 
+ 
 
   userLogin(data:login){
     this.http.get<signUp[]>(`http://localhost:3000/UserData?username=${data.username}&password=${data.password}`,
@@ -36,6 +40,7 @@ export class UserdataService {
         this.invalidUserAuth.emit(false)
       }else{
         this.invalidUserAuth.emit(true)
+        
         console.log("Error");
         
       }

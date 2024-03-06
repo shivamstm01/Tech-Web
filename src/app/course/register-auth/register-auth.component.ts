@@ -8,7 +8,7 @@ import { login, signUp } from 'src/app/data';
   styleUrls: ['./register-auth.component.css']
 })
 export class RegisterAuthComponent implements OnInit {
-  showlogin:boolean=false;
+  showlogin:boolean=true;
  
   selectedAge: number = 18;
   states: string[] = [
@@ -26,17 +26,27 @@ export class RegisterAuthComponent implements OnInit {
     'Varanasi', 'Srinagar', 'Aurangabad', 'Dhanbad', 'Amritsar', 'Navi Mumbai', 'Allahabad',
     'Howrah', 'Ranchi', 'Gwalior', 'Jabalpur', 'Vijayawada', 'Jodhpur', 'Raipur', 'Kota', 'Guwahati'
   ];
-
+ 
   selectedCity: string = ''; // Variable to hold the selected city
   
-
+  
   constructor(private http:UserdataService) { }
 
   ngOnInit(): void {
+    
+
+    
+    
+
+    
+    
   }
   RegisterAccount(data: signUp) {
         console.warn(data);
-        this.http.userSignUp(data);
+        if(data){
+          this.http.userSignUp(data);
+        }
+       
 }
 
 logIn(data:login){

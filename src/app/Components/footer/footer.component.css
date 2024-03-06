@@ -1,0 +1,41 @@
+.footer{
+
+    background-color:  #34495e;
+    text-align: center;
+    background-size: cover;
+    border-bottom: 4px solid deepskyblue;
+    border-top: 4px solid deepskyblue;
+    margin-top: 10px;
+    height: 250px;
+    color: white;
+
+
+    .footerup{
+
+        padding: 60px;
+       
+
+        input {
+            border-radius: 5px;
+            border: 2px solid deepskyblue;
+            height: 35px;
+            padding: 5px;
+            width: 420px;
+            background-color: #34495e;
+            color: white;
+           
+            
+          }
+          i {
+            width: 2px;
+            position: relative;
+            right: 30px;
+            font-size: 20px;
+            line-height: 40px; 
+           
+          }
+
+    }
+
+    
+}

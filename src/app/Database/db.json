@@ -27,6 +27,48 @@
       "PinCode": 14401,
       "Collage": "ies",
       "id": 2
+    },
+    {
+      "fname": "Adnan",
+      "email": "Adnan@abc",
+      "number": "6201763368",
+      "age": 18,
+      "username": "adnan01",
+      "password": "App@123",
+      "Address": "Pune",
+      "state": "Maharashtra",
+      "City": "Pune",
+      "PinCode": 110012,
+      "Collage": "IES",
+      "id": 3
+    },
+    {
+      "fname": "Shivam",
+      "email": "shivamstm01@gmail.com",
+      "number": "2121212121",
+      "age": 18,
+      "username": "shivamstm01",
+      "password": "Sitamarhi@123",
+      "Address": "patna",
+      "state": "Maharashtra",
+      "City": "Lucknow",
+      "PinCode": 21212121,
+      "Collage": "ies",
+      "id": 4
+    },
+    {
+      "fname": "Shivam Kumar",
+      "email": "Shivamstm01@abc",
+      "number": "12121212122",
+      "age": 18,
+      "username": "shivamstm01",
+      "password": "App@abc",
+      "Address": "hftyfyu",
+      "state": "Andhra Pradesh",
+      "City": "Mumbai",
+      "PinCode": 843301,
+      "Collage": "ies",
+      "id": 5
     }
   ]
 }

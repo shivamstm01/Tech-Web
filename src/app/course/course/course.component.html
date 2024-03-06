@@ -1,2 +1,6 @@
 
-<p>course works!</p>
+<h1>Angular Courses</h1>>
+
+<video preload="auto" width="200px" height="200px" controls  *ngFor="let VideoPath of VideoPath">
+    <source [src]="'assets/' + VideoPath" type="video/mp4" />
+</video>

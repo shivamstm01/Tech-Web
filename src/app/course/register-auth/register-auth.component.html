@@ -7,7 +7,7 @@
         <button type="submit" class="loginbtn">Submit</button>
 <br>
         <span class="showsignup">Dont have An Accoun? <b (click)="loginclose()">Click for signup</b> </span>
-    
+  
     </form>
 </div>
 
@@ -17,23 +17,28 @@
 
     <div class="Signupfname">
       <label for="fname">Full Name:</label>
-      <input type="text" placeholder="Full Name" name="fname" ngModel class="fname" required>
+      <input type="text" placeholder="Full Name" name="fname" ngModel pattern="[a-zA-Z\s]+" class="fname" required>
       <div *ngIf="registrAccount.controls['fname'].invalid && (registrAccount.controls['fname'].dirty || registrAccount.controls['fname'].touched)">
-          <div *ngIf="registrAccount.controls['fname'].errors?.required">Full Name is required.</div>
+          <div *ngIf="registrAccount.controls['fname'].errors?.required" id="fnameError">Full Name is required.</div>
+          <div *ngIf="registrAccount.controls['fname'].errors?.pattern" id="fnameError">Invalid characters in the name.</div>
       </div>
   </div>
 
-    <div class="Signupemail">
-        <label for="email">Email:</label>
-        <input type="email" placeholder="Email" name="email" ngModel id="email" required email>
+  <div class="Signupemail">
+    <label for="email">Email:</label>
+    <input type="email" placeholder="Email" name="email" ngModel id="email" required email>
+    <div *ngIf="registrAccount.controls['email'].invalid && (registrAccount.controls['email'].dirty || registrAccount.controls['email'].touched)">
+        <div *ngIf="registrAccount.controls['email'].errors?.required" id="emailError">Email is required.</div>
+        <div *ngIf="registrAccount.controls['email'].errors?.email" id="emailError">Invalid email format.</div>
     </div>
+</div>
 
     <div class="Signupnumber">
       <label for="number">Number:</label>
       <input type="text" placeholder="Number" name="number" ngModel id="number" required pattern="[0-9]*">
       <div *ngIf="registrAccount.controls['number'].invalid && (registrAccount.controls['number'].dirty || registrAccount.controls['number'].touched)">
-          <div *ngIf="registrAccount.controls['number'].errors?.required">Number is required.</div>
-          <div *ngIf="registrAccount.controls['number'].errors?.pattern">Invalid number format.</div>
+          <div *ngIf="registrAccount.controls['number'].errors?.required" id="numberError">Number is required.</div>
+          <div *ngIf="registrAccount.controls['number'].errors?.pattern" id="numberError">Invalid number format.</div>
       </div>
   </div>
 
@@ -84,9 +89,9 @@
         <input type="text" placeholder="Enter College/School Name" name="Collage" ngModel id="Collage" required>
     </div>
 
-    <button type="submit" class="Sigbtn" >Register</button>
+    <button type="submit" *ngIf="registrAccount.valid" class="Sigbtn" >Register</button>
 
-    <div class="showLogin"><span>Already Have an Account?<b (click)="Registerclose()">Click for signIn</b> </span></div>
+    <div class="showLogin"><span>Already Have an Account?<b (click)="Registerclose()">Click for Login</b> </span></div>
 
 </form>
 

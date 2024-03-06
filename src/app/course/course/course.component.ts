@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course.component.css']
 })
 export class CourseComponent implements OnInit {
+  VideoPath=['pexels_videos_4409 (1080p).mp4','human_feeding_the_little_squirrel (Original).mp4'];
 
   constructor() { }
 
