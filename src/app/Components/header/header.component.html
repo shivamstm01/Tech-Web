@@ -4,16 +4,16 @@
     <ul  *ngSwitchCase="'default'">
         <li><a routerLink="home" >Home</a></li>
         <!-- <li><a  routerLink="Courses/Course">Course</a></li> -->
-        <li><a  routerLink="Courses/register">Sighnup/Login</a></li>
-        <li><a  routerLink="Courses/Course">About</a></li>
+        <li><a  routerLink="User/register">Sighnup/Login</a></li>
+        <li><a  routerLink="User/Course">About</a></li>
     </ul>
 
     <ul  *ngSwitchCase="'user'">
         <li><a routerLink="/#"  >Home</a></li>
         <li><a routerLink="/#" >ABOUT US</a></li>
         <li><a routerLink="/#">JOBS</a></li>
-        <li><a routerLink="/#">CLIENTS</a></li>
-        <li><a routerLink="/#">{{userName | titlecase}}</a></li>
+        <li><a  routerLink="User/Course">Course</a></li>
+        <li><a  routerLink="User/profile">{{userName | titlecase}}</a></li>
         <li><a routerLink="/#"  (click)="userLogout()">Logout</a></li>
     </ul>
   

@@ -31,7 +31,7 @@ export class HeaderComponent implements OnInit {
 
   userLogout(){
     localStorage.removeItem('user');
-    this.route.navigate(['register-auth']);
+    this.route.navigate(['home']);
 
   }
 

@@ -10,6 +10,7 @@ import { NgbDropdownModule, NgbModule, NgbNavModule } from '@ng-bootstrap/ng-boo
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http'
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,7 @@ import {HttpClientModule} from '@angular/common/http'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,NgbDropdownModule,NgbNavModule,FormsModule,HttpClientModule
+    NgbModule,NgbDropdownModule,NgbNavModule,FormsModule,HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

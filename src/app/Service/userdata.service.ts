@@ -24,7 +24,7 @@ export class UserdataService {
       console.warn(result)
       if(result){
         localStorage.setItem('user',JSON.stringify(result.body))
-        this.router.navigate(['Courses/Course'])
+        this.router.navigate(['User/Course'])
       }
     })
   } 
@@ -36,7 +36,7 @@ export class UserdataService {
     ).subscribe((result)=>{
       if(result && result.body?.length){
         localStorage.setItem('user',JSON.stringify(result.body[0]));
-        this.router.navigate(['/Courses/Course']);
+        this.router.navigate(['/User/Course']);
         this.invalidUserAuth.emit(false)
       }else{
         this.invalidUserAuth.emit(true)
@@ -52,4 +52,6 @@ export class UserdataService {
       this.router.navigate(['/home']);
     }
   }
+
+  
 }

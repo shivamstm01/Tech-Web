@@ -4,7 +4,7 @@ import { CourseModule } from './course/course.module';
 import { HomeComponent } from './Components/home/home.component';
 
 const routes: Routes = [
-  {path:'Courses',loadChildren:()=>import('./course/course.module').then(m=>m.CourseModule)},
+  {path:'User',loadChildren:()=>import('./course/course.module').then(m=>m.CourseModule)},
   {path:'home',component:HomeComponent},
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }
