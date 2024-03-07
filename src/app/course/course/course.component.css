@@ -1,0 +1,21 @@
+.videos-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: nowrap; /* Prevent wrapping to new lines */
+    justify-content: flex-start; /* Align items at the start of the container */
+    gap: 10px; /* Adjust the gap between video items */
+
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+
+
+.video-item {
+    width: 220px; /* Set a fixed width for each video item */
+    margin-left: 50px;
+
+}
+
+
+
+

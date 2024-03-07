@@ -1,6 +1,36 @@
 
-<h1>Angular Courses</h1>>
 
-<video preload="auto" width="200px" height="200px" controls  *ngFor="let VideoPath of VideoPath">
-    <source [src]="'assets/' + VideoPath" type="video/mp4" />
-</video>
+
+<h1>Angular Courses</h1>
+<div class="videos-container">
+    
+    <div *ngFor="let video of videos" class="video-item">
+        <video preload="auto" width="200px" height="200px" controls>
+            <source [src]="'assets/' + video.path" type="video/mp4" />
+        </video>
+        <p>{{ video.description }}</p>
+    </div>
+</div>
+
+<h1>Java Courses</h1>
+<div class="videos-container">
+    
+    <div *ngFor="let video of videos" class="video-item">
+        <video preload="auto" width="200px" height="200px" controls>
+            <source [src]="'assets/' + video.path" type="video/mp4" />
+        </video>
+        <p>{{ video.description }}</p>
+    </div>
+</div>
+
+<h1>Python Courses</h1>
+<div class="videos-container">
+    
+    <div *ngFor="let video of videos" class="video-item">
+        <video preload="auto" width="200px" height="200px" controls>
+            <source [src]="'assets/' + video.path" type="video/mp4" />
+        </video>
+        <p>{{ video.description }}</p>
+    </div>
+</div>
+
