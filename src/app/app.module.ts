@@ -8,7 +8,8 @@ import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { NgbDropdownModule, NgbModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http'
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http'
+import { InterceptorInterceptor } from './Service/interceptor.interceptor';
 
 
 @NgModule({
@@ -23,7 +24,11 @@ import {HttpClientModule} from '@angular/common/http'
     AppRoutingModule,
     NgbModule,NgbDropdownModule,NgbNavModule,FormsModule,HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    // Provide the interceptor
+    { provide: HTTP_INTERCEPTORS, useClass: InterceptorInterceptor, multi: true }
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

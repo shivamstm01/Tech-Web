@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { Injectable ,EventEmitter} from '@angular/core';
 import { Router } from '@angular/router';
 import {login, signUp} from '../data'
@@ -46,6 +46,7 @@ export class UserdataService {
       }
     })
   }
+
 
   userAuthReload(){
     if(localStorage.getItem('user')){
